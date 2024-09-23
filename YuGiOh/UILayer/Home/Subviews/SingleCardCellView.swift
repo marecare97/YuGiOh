@@ -16,23 +16,10 @@ struct SingleCardCellView: View {
         
         LabeledContent {
             
-            if let imageURLString = singleCard?.cardImages.first?.imageURL,
-               let url = URL(string: imageURLString) {
-                
-                KFImage(url)
-                    .placeholder{
-                        Image(.cardBack)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 130, height: 150)
-                            .clipped()
-                    }
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 130, height: 150)
-                    .clipped()
-                
-            }
+            CardImageView(
+                imageLink: singleCard?.cardImages.first?.imageURL,
+                cardImageSize: (width: 130, height: 150)
+            )
             
         } label: {
             Text(singleCard?.name ?? "")

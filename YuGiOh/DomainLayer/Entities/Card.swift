@@ -20,9 +20,10 @@ struct Card: Codable {
     let name: String
     let desc: String
     let cardImages: [CardImage]
+    let type: String
     
     enum CodingKeys: String, CodingKey {
-        case id, name, desc
+        case id, name, desc, type
         case cardImages = "card_images"
     }
 }

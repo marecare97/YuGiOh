@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F6657EA82C7F5696006D81E3 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = F6657EA72C7F5696006D81E3 /* SFSafeSymbols */; };
+		F693BBA22CA1A6BB00960E2B /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F693BBA12CA1A6BB00960E2B /* CardImageView.swift */; };
 		F69849872C6E384A00B50E31 /* YuGiOhApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849862C6E384A00B50E31 /* YuGiOhApp.swift */; };
 		F698498B2C6E384B00B50E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F698498A2C6E384B00B50E31 /* Assets.xcassets */; };
 		F698498E2C6E384B00B50E31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F698498D2C6E384B00B50E31 /* Preview Assets.xcassets */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		F6657EA52C7F54A2006D81E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F693BBA12CA1A6BB00960E2B /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 		F69849832C6E384A00B50E31 /* YuGiOh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuGiOh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69849862C6E384A00B50E31 /* YuGiOhApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuGiOhApp.swift; sourceTree = "<group>"; };
 		F698498A2C6E384B00B50E31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F693BBA02CA1A67200960E2B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F693BBA12CA1A6BB00960E2B /* CardImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F698497A2C6E384A00B50E31 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +181,7 @@
 		F69849B42C6E3A5100B50E31 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
+				F693BBA02CA1A67200960E2B /* Components */,
 				F69849BB2C6E3E1100B50E31 /* Home */,
 				F69849D52C71542200B50E31 /* CardDetails */,
 				F69849D22C7152F400B50E31 /* Resources */,
@@ -404,6 +415,7 @@
 				F69849D42C71537E00B50E31 /* HomeCoordinator.swift in Sources */,
 				F69849872C6E384A00B50E31 /* YuGiOhApp.swift in Sources */,
 				F69849D72C71543C00B50E31 /* CardDetailsView.swift in Sources */,
+				F693BBA22CA1A6BB00960E2B /* CardImageView.swift in Sources */,
 				F69849D12C7150B400B50E31 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

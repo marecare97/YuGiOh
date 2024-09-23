@@ -20,7 +20,9 @@ struct CardDetailsView: View {
             
             header
             
-            Text("\(card?.name ?? "")")
+            cardDetails
+            
+            Spacer()
             
         }
         
@@ -30,17 +32,44 @@ struct CardDetailsView: View {
         
         HStack {
             
+            Text("\(card?.name ?? "")")
+                .font(.title)
+                .fontWeight(.bold)
+            
             Spacer()
             
-            Image(systemSymbol: .arrowBackward)
+            Image(systemSymbol: .xCircleFill)
                 .resizable()
-                .frame(width: 20, height: 20)
+                .frame(width: 30, height: 30)
                 .onTapGesture {
                     viewModel.goBack()
                 }
-
+            
         }
+        .padding()
     }
+    
+    var cardDetails: some View {
+        
+        HStack {
+            
+            CardImageView(
+                imageLink: card?.cardImages.first?.imageURL,
+                cardImageSize: (width: 230, height: 250)
+            )
+            
+            VStack(alignment: .leading, spacing: 5) {
+                
+                Text("Type")
+                
+                Text("\(card?.type ?? "")")
+                
+            }
+            
+        }
+        
+    }
+    
 }
 
 #Preview {
