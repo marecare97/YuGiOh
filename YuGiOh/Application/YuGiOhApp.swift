@@ -11,7 +11,7 @@ import SwiftUI
 struct YuGiOhApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppCoordinator().view()
         }
     }
 }

@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6657EA82C7F5696006D81E3 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = F6657EA72C7F5696006D81E3 /* SFSafeSymbols */; };
 		F69849872C6E384A00B50E31 /* YuGiOhApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849862C6E384A00B50E31 /* YuGiOhApp.swift */; };
-		F69849892C6E384A00B50E31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849882C6E384A00B50E31 /* ContentView.swift */; };
 		F698498B2C6E384B00B50E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F698498A2C6E384B00B50E31 /* Assets.xcassets */; };
 		F698498E2C6E384B00B50E31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F698498D2C6E384B00B50E31 /* Preview Assets.xcassets */; };
 		F69849982C6E384C00B50E31 /* YuGiOhTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849972C6E384C00B50E31 /* YuGiOhTests.swift */; };
 		F69849A22C6E384C00B50E31 /* YuGiOhUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849A12C6E384C00B50E31 /* YuGiOhUITests.swift */; };
 		F69849A42C6E384C00B50E31 /* YuGiOhUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849A32C6E384C00B50E31 /* YuGiOhUITestsLaunchTests.swift */; };
+		F69849B22C6E396400B50E31 /* TinyNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = F69849B12C6E396400B50E31 /* TinyNetworking */; };
+		F69849BA2C6E3AE000B50E31 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849B92C6E3AE000B50E31 /* APIRequest.swift */; };
+		F69849BD2C6E3E1D00B50E31 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849BC2C6E3E1D00B50E31 /* HomeView.swift */; };
+		F69849BF2C6E3E2800B50E31 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849BE2C6E3E2800B50E31 /* HomeViewModel.swift */; };
+		F69849C52C6E3EF700B50E31 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849C42C6E3EF700B50E31 /* Card.swift */; };
+		F69849C82C6E502200B50E31 /* SingleCardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849C72C6E502200B50E31 /* SingleCardCellView.swift */; };
+		F69849CB2C6E8EE200B50E31 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F69849CA2C6E8EE200B50E31 /* Kingfisher */; };
+		F69849CE2C714FA400B50E31 /* Stinsen in Frameworks */ = {isa = PBXBuildFile; productRef = F69849CD2C714FA400B50E31 /* Stinsen */; };
+		F69849D12C7150B400B50E31 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849D02C7150B400B50E31 /* AppCoordinator.swift */; };
+		F69849D42C71537E00B50E31 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849D32C71537E00B50E31 /* HomeCoordinator.swift */; };
+		F69849D72C71543C00B50E31 /* CardDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849D62C71543C00B50E31 /* CardDetailsView.swift */; };
+		F69849D92C71544700B50E31 /* CardDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849D82C71544700B50E31 /* CardDetailsViewModel.swift */; };
+		F69849DC2C72850900B50E31 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F69849DB2C72850900B50E31 /* Lottie */; };
+		F69849E32C7285BE00B50E31 /* LottieAnimatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849E22C7285BE00B50E31 /* LottieAnimatingView.swift */; };
+		F69849E52C72862100B50E31 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = F69849E42C72862100B50E31 /* loader.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F6657EA52C7F54A2006D81E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F69849832C6E384A00B50E31 /* YuGiOh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuGiOh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69849862C6E384A00B50E31 /* YuGiOhApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuGiOhApp.swift; sourceTree = "<group>"; };
-		F69849882C6E384A00B50E31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F698498A2C6E384B00B50E31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F698498D2C6E384B00B50E31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F69849932C6E384C00B50E31 /* YuGiOhTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuGiOhTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +59,17 @@
 		F698499D2C6E384C00B50E31 /* YuGiOhUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuGiOhUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69849A12C6E384C00B50E31 /* YuGiOhUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuGiOhUITests.swift; sourceTree = "<group>"; };
 		F69849A32C6E384C00B50E31 /* YuGiOhUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuGiOhUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F69849B92C6E3AE000B50E31 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		F69849BC2C6E3E1D00B50E31 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F69849BE2C6E3E2800B50E31 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F69849C42C6E3EF700B50E31 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		F69849C72C6E502200B50E31 /* SingleCardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardCellView.swift; sourceTree = "<group>"; };
+		F69849D02C7150B400B50E31 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F69849D32C71537E00B50E31 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		F69849D62C71543C00B50E31 /* CardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsView.swift; sourceTree = "<group>"; };
+		F69849D82C71544700B50E31 /* CardDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsViewModel.swift; sourceTree = "<group>"; };
+		F69849E22C7285BE00B50E31 /* LottieAnimatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimatingView.swift; sourceTree = "<group>"; };
+		F69849E42C72862100B50E31 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +77,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6657EA82C7F5696006D81E3 /* SFSafeSymbols in Frameworks */,
+				F69849CE2C714FA400B50E31 /* Stinsen in Frameworks */,
+				F69849CB2C6E8EE200B50E31 /* Kingfisher in Frameworks */,
+				F69849B22C6E396400B50E31 /* TinyNetworking in Frameworks */,
+				F69849DC2C72850900B50E31 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +125,11 @@
 		F69849852C6E384A00B50E31 /* YuGiOh */ = {
 			isa = PBXGroup;
 			children = (
-				F69849862C6E384A00B50E31 /* YuGiOhApp.swift */,
-				F69849882C6E384A00B50E31 /* ContentView.swift */,
-				F698498A2C6E384B00B50E31 /* Assets.xcassets */,
+				F6657EA52C7F54A2006D81E3 /* Info.plist */,
+				F69849B62C6E3A9800B50E31 /* Application */,
+				F69849B52C6E3A8B00B50E31 /* DomainLayer */,
+				F69849B42C6E3A5100B50E31 /* UILayer */,
+				F69849B32C6E3A3600B50E31 /* DataLayer */,
 				F698498C2C6E384B00B50E31 /* Preview Content */,
 			);
 			path = YuGiOh;
@@ -127,6 +160,95 @@
 			path = YuGiOhUITests;
 			sourceTree = "<group>";
 		};
+		F69849B32C6E3A3600B50E31 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F69849B92C6E3AE000B50E31 /* APIRequest.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		F69849B42C6E3A5100B50E31 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				F69849BB2C6E3E1100B50E31 /* Home */,
+				F69849D52C71542200B50E31 /* CardDetails */,
+				F69849D22C7152F400B50E31 /* Resources */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		F69849B52C6E3A8B00B50E31 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F69849C32C6E3EA700B50E31 /* Entities */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		F69849B62C6E3A9800B50E31 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F69849CF2C7150A300B50E31 /* Coordinators */,
+				F69849862C6E384A00B50E31 /* YuGiOhApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F69849BB2C6E3E1100B50E31 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F69849C62C6E501100B50E31 /* Subviews */,
+				F69849BC2C6E3E1D00B50E31 /* HomeView.swift */,
+				F69849BE2C6E3E2800B50E31 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F69849C32C6E3EA700B50E31 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F69849C42C6E3EF700B50E31 /* Card.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F69849C62C6E501100B50E31 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				F69849C72C6E502200B50E31 /* SingleCardCellView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		F69849CF2C7150A300B50E31 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F69849D02C7150B400B50E31 /* AppCoordinator.swift */,
+				F69849D32C71537E00B50E31 /* HomeCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F69849D22C7152F400B50E31 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F69849E22C7285BE00B50E31 /* LottieAnimatingView.swift */,
+				F69849E42C72862100B50E31 /* loader.json */,
+				F698498A2C6E384B00B50E31 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F69849D52C71542200B50E31 /* CardDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F69849D62C71543C00B50E31 /* CardDetailsView.swift */,
+				F69849D82C71544700B50E31 /* CardDetailsViewModel.swift */,
+			);
+			path = CardDetails;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +265,13 @@
 			dependencies = (
 			);
 			name = YuGiOh;
+			packageProductDependencies = (
+				F69849B12C6E396400B50E31 /* TinyNetworking */,
+				F69849CA2C6E8EE200B50E31 /* Kingfisher */,
+				F69849CD2C714FA400B50E31 /* Stinsen */,
+				F69849DB2C72850900B50E31 /* Lottie */,
+				F6657EA72C7F5696006D81E3 /* SFSafeSymbols */,
+			);
 			productName = YuGiOh;
 			productReference = F69849832C6E384A00B50E31 /* YuGiOh.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +344,13 @@
 				Base,
 			);
 			mainGroup = F698497A2C6E384A00B50E31;
+			packageReferences = (
+				F69849B02C6E396400B50E31 /* XCRemoteSwiftPackageReference "TinyNetworking" */,
+				F69849C92C6E8EE200B50E31 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F69849CC2C714FA400B50E31 /* XCRemoteSwiftPackageReference "stinsen" */,
+				F69849DA2C72850900B50E31 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				F6657EA62C7F5696006D81E3 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+			);
 			productRefGroup = F69849842C6E384A00B50E31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F69849E52C72862100B50E31 /* loader.json in Resources */,
 				F698498E2C6E384B00B50E31 /* Preview Assets.xcassets in Resources */,
 				F698498B2C6E384B00B50E31 /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +394,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F69849892C6E384A00B50E31 /* ContentView.swift in Sources */,
+				F69849C82C6E502200B50E31 /* SingleCardCellView.swift in Sources */,
+				F69849D92C71544700B50E31 /* CardDetailsViewModel.swift in Sources */,
+				F69849C52C6E3EF700B50E31 /* Card.swift in Sources */,
+				F69849BD2C6E3E1D00B50E31 /* HomeView.swift in Sources */,
+				F69849E32C7285BE00B50E31 /* LottieAnimatingView.swift in Sources */,
+				F69849BA2C6E3AE000B50E31 /* APIRequest.swift in Sources */,
+				F69849BF2C6E3E2800B50E31 /* HomeViewModel.swift in Sources */,
+				F69849D42C71537E00B50E31 /* HomeCoordinator.swift in Sources */,
 				F69849872C6E384A00B50E31 /* YuGiOhApp.swift in Sources */,
+				F69849D72C71543C00B50E31 /* CardDetailsView.swift in Sources */,
+				F69849D12C7150B400B50E31 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +571,16 @@
 				DEVELOPMENT_TEAM = LWLYM5BX6D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YuGiOh/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YuGiOh;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,9 +588,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = markos.YuGiOh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,11 +609,16 @@
 				DEVELOPMENT_TEAM = LWLYM5BX6D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YuGiOh/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YuGiOh;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,9 +626,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = markos.YuGiOh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -588,6 +752,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6657EA62C7F5696006D81E3 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SFSafeSymbols/SFSafeSymbols.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+		F69849B02C6E396400B50E31 /* XCRemoteSwiftPackageReference "TinyNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdisho/TinyNetworking.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F69849C92C6E8EE200B50E31 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+		F69849CC2C714FA400B50E31 /* XCRemoteSwiftPackageReference "stinsen" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rundfunk47/stinsen.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.13;
+			};
+		};
+		F69849DA2C72850900B50E31 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6657EA72C7F5696006D81E3 /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6657EA62C7F5696006D81E3 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+		F69849B12C6E396400B50E31 /* TinyNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69849B02C6E396400B50E31 /* XCRemoteSwiftPackageReference "TinyNetworking" */;
+			productName = TinyNetworking;
+		};
+		F69849CA2C6E8EE200B50E31 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69849C92C6E8EE200B50E31 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		F69849CD2C714FA400B50E31 /* Stinsen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69849CC2C714FA400B50E31 /* XCRemoteSwiftPackageReference "stinsen" */;
+			productName = Stinsen;
+		};
+		F69849DB2C72850900B50E31 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69849DA2C72850900B50E31 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F698497B2C6E384A00B50E31 /* Project object */;
 }
