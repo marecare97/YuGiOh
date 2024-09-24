@@ -17,14 +17,16 @@ struct YuGiOhLoaderView: View {
         VStack {
             
             Spacer()
+            
             LottieAnimatingView(animation: .loader)
+            
             Spacer()
         }
         .frame(
             maxWidth: .infinity,
             maxHeight: .infinity
         )
-        .ignoresSafeArea()
+        .ignoresSafeArea(edges: .top)
         .background(.white)
     }
     

@@ -17,7 +17,7 @@ final class AppCoordinator: NavigationCoordinatable {
     
     @Route(.push) var main = makeMain
     
-    func makeMain() -> HomeCoordinator {
-        return HomeCoordinator()
+    func makeMain() -> TabCoordinator {
+        return TabCoordinator()
     }
 }

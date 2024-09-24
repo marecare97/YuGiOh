@@ -36,7 +36,6 @@ extension HomeViewModel {
                 
                 self.allCards = cardsResponse?.data ?? []
                 self.isLoading = false
-                print(cardsResponse)
                 
             case let .failure(error):
                 self.isLoading = false

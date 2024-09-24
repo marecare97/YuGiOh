@@ -40,7 +40,7 @@ struct CardDetailsView: View {
             
             Image(systemSymbol: .xCircleFill)
                 .resizable()
-                .frame(width: 30, height: 30)
+                .frame(width: 25, height: 25)
                 .onTapGesture {
                     viewModel.goBack()
                 }

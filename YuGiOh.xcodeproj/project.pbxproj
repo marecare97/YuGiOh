@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6626BFA2CA29FE5003A7FBB /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6626BF92CA29FE5003A7FBB /* TabCoordinator.swift */; };
+		F6626BFC2CA2A456003A7FBB /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6626BFB2CA2A456003A7FBB /* ProfileCoordinator.swift */; };
+		F6626BFF2CA2A4D3003A7FBB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6626BFE2CA2A4D3003A7FBB /* ProfileView.swift */; };
+		F6626C012CA2A4DD003A7FBB /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6626C002CA2A4DD003A7FBB /* ProfileViewModel.swift */; };
+		F6626C032CA2A74F003A7FBB /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = F6626C022CA2A74F003A7FBB /* loader.json */; };
 		F6657EA82C7F5696006D81E3 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = F6657EA72C7F5696006D81E3 /* SFSafeSymbols */; };
 		F693BBA22CA1A6BB00960E2B /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F693BBA12CA1A6BB00960E2B /* CardImageView.swift */; };
 		F69849872C6E384A00B50E31 /* YuGiOhApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849862C6E384A00B50E31 /* YuGiOhApp.swift */; };
@@ -29,7 +34,6 @@
 		F69849D92C71544700B50E31 /* CardDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849D82C71544700B50E31 /* CardDetailsViewModel.swift */; };
 		F69849DC2C72850900B50E31 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F69849DB2C72850900B50E31 /* Lottie */; };
 		F69849E32C7285BE00B50E31 /* LottieAnimatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849E22C7285BE00B50E31 /* LottieAnimatingView.swift */; };
-		F69849E52C72862100B50E31 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = F69849E42C72862100B50E31 /* loader.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F6626BF92CA29FE5003A7FBB /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		F6626BFB2CA2A456003A7FBB /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		F6626BFE2CA2A4D3003A7FBB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F6626C002CA2A4DD003A7FBB /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		F6626C022CA2A74F003A7FBB /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		F6657EA52C7F54A2006D81E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F693BBA12CA1A6BB00960E2B /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 		F69849832C6E384A00B50E31 /* YuGiOh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuGiOh.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +80,6 @@
 		F69849D62C71543C00B50E31 /* CardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsView.swift; sourceTree = "<group>"; };
 		F69849D82C71544700B50E31 /* CardDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsViewModel.swift; sourceTree = "<group>"; };
 		F69849E22C7285BE00B50E31 /* LottieAnimatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimatingView.swift; sourceTree = "<group>"; };
-		F69849E42C72862100B50E31 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6626BFD2CA2A4C3003A7FBB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F6626BFE2CA2A4D3003A7FBB /* ProfileView.swift */,
+				F6626C002CA2A4DD003A7FBB /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		F693BBA02CA1A67200960E2B /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +201,7 @@
 				F693BBA02CA1A67200960E2B /* Components */,
 				F69849BB2C6E3E1100B50E31 /* Home */,
 				F69849D52C71542200B50E31 /* CardDetails */,
+				F6626BFD2CA2A4C3003A7FBB /* Profile */,
 				F69849D22C7152F400B50E31 /* Resources */,
 			);
 			path = UILayer;
@@ -236,7 +254,9 @@
 			isa = PBXGroup;
 			children = (
 				F69849D02C7150B400B50E31 /* AppCoordinator.swift */,
+				F6626BF92CA29FE5003A7FBB /* TabCoordinator.swift */,
 				F69849D32C71537E00B50E31 /* HomeCoordinator.swift */,
+				F6626BFB2CA2A456003A7FBB /* ProfileCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -245,7 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				F69849E22C7285BE00B50E31 /* LottieAnimatingView.swift */,
-				F69849E42C72862100B50E31 /* loader.json */,
+				F6626C022CA2A74F003A7FBB /* loader.json */,
 				F698498A2C6E384B00B50E31 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -378,7 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F69849E52C72862100B50E31 /* loader.json in Resources */,
+				F6626C032CA2A74F003A7FBB /* loader.json in Resources */,
 				F698498E2C6E384B00B50E31 /* Preview Assets.xcassets in Resources */,
 				F698498B2C6E384B00B50E31 /* Assets.xcassets in Resources */,
 			);
@@ -408,14 +428,18 @@
 				F69849C82C6E502200B50E31 /* SingleCardCellView.swift in Sources */,
 				F69849D92C71544700B50E31 /* CardDetailsViewModel.swift in Sources */,
 				F69849C52C6E3EF700B50E31 /* Card.swift in Sources */,
+				F6626BFA2CA29FE5003A7FBB /* TabCoordinator.swift in Sources */,
 				F69849BD2C6E3E1D00B50E31 /* HomeView.swift in Sources */,
 				F69849E32C7285BE00B50E31 /* LottieAnimatingView.swift in Sources */,
 				F69849BA2C6E3AE000B50E31 /* APIRequest.swift in Sources */,
+				F6626BFF2CA2A4D3003A7FBB /* ProfileView.swift in Sources */,
 				F69849BF2C6E3E2800B50E31 /* HomeViewModel.swift in Sources */,
+				F6626BFC2CA2A456003A7FBB /* ProfileCoordinator.swift in Sources */,
 				F69849D42C71537E00B50E31 /* HomeCoordinator.swift in Sources */,
 				F69849872C6E384A00B50E31 /* YuGiOhApp.swift in Sources */,
 				F69849D72C71543C00B50E31 /* CardDetailsView.swift in Sources */,
 				F693BBA22CA1A6BB00960E2B /* CardImageView.swift in Sources */,
+				F6626C012CA2A4DD003A7FBB /* ProfileViewModel.swift in Sources */,
 				F69849D12C7150B400B50E31 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
