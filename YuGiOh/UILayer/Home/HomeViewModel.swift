@@ -6,16 +6,17 @@
 //
 
 import Foundation
-import TinyNetworking
 import Stinsen
+import TinyNetworking
 
 final class HomeViewModel: ObservableObject {
     
     @RouterObject
     var homeRouter: HomeCoordinator.Router?
-    let tinyNetworking = TinyNetworking<APIRequest>()
     
-    @Published var allCards: [Card] = []
+    @Injected var tinyNetworking: TinyNetworking<APIRequest>
+    
+    @Published var allCards: Cards = []
     @Published var isLoading = true
     
 }

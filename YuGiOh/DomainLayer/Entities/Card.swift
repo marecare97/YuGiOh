@@ -15,7 +15,7 @@ struct CardData: Codable {
 }
 
 // MARK: - Card
-struct Card: Codable {
+struct Card: Codable, Equatable {
     let id: Int
     let name: String
     let desc: String
@@ -28,7 +28,7 @@ struct Card: Codable {
     }
 }
 
-struct CardImage: Codable {
+struct CardImage: Codable, Equatable {
     let id: Int
     let imageURL, imageURLSmall, imageURLCropped: String
 

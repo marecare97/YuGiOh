@@ -20,7 +20,6 @@
 		F69849982C6E384C00B50E31 /* YuGiOhTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849972C6E384C00B50E31 /* YuGiOhTests.swift */; };
 		F69849A22C6E384C00B50E31 /* YuGiOhUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849A12C6E384C00B50E31 /* YuGiOhUITests.swift */; };
 		F69849A42C6E384C00B50E31 /* YuGiOhUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849A32C6E384C00B50E31 /* YuGiOhUITestsLaunchTests.swift */; };
-		F69849B22C6E396400B50E31 /* TinyNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = F69849B12C6E396400B50E31 /* TinyNetworking */; };
 		F69849BA2C6E3AE000B50E31 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849B92C6E3AE000B50E31 /* APIRequest.swift */; };
 		F69849BD2C6E3E1D00B50E31 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849BC2C6E3E1D00B50E31 /* HomeView.swift */; };
 		F69849BF2C6E3E2800B50E31 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849BE2C6E3E2800B50E31 /* HomeViewModel.swift */; };
@@ -34,6 +33,10 @@
 		F69849D92C71544700B50E31 /* CardDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849D82C71544700B50E31 /* CardDetailsViewModel.swift */; };
 		F69849DC2C72850900B50E31 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F69849DB2C72850900B50E31 /* Lottie */; };
 		F69849E32C7285BE00B50E31 /* LottieAnimatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69849E22C7285BE00B50E31 /* LottieAnimatingView.swift */; };
+		F6CC068F2CA574C600DAC181 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CC068E2CA574C600DAC181 /* Injected.swift */; };
+		F6CC06912CA5755900DAC181 /* AppDependenciesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CC06902CA5755900DAC181 /* AppDependenciesContainer.swift */; };
+		F6CC06932CA57AFE00DAC181 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CC06922CA57AFE00DAC181 /* URLProtocolMock.swift */; };
+		F6F494912CA58426007DB49A /* TinyNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = F6F494902CA58426007DB49A /* TinyNetworking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		F69849D62C71543C00B50E31 /* CardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsView.swift; sourceTree = "<group>"; };
 		F69849D82C71544700B50E31 /* CardDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsViewModel.swift; sourceTree = "<group>"; };
 		F69849E22C7285BE00B50E31 /* LottieAnimatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimatingView.swift; sourceTree = "<group>"; };
+		F6CC068E2CA574C600DAC181 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		F6CC06902CA5755900DAC181 /* AppDependenciesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependenciesContainer.swift; sourceTree = "<group>"; };
+		F6CC06922CA57AFE00DAC181 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +95,8 @@
 			files = (
 				F6657EA82C7F5696006D81E3 /* SFSafeSymbols in Frameworks */,
 				F69849CE2C714FA400B50E31 /* Stinsen in Frameworks */,
+				F6F494912CA58426007DB49A /* TinyNetworking in Frameworks */,
 				F69849CB2C6E8EE200B50E31 /* Kingfisher in Frameworks */,
-				F69849B22C6E396400B50E31 /* TinyNetworking in Frameworks */,
 				F69849DC2C72850900B50E31 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				F69849972C6E384C00B50E31 /* YuGiOhTests.swift */,
+				F6CC06922CA57AFE00DAC181 /* URLProtocolMock.swift */,
 			);
 			path = YuGiOhTests;
 			sourceTree = "<group>";
@@ -218,7 +225,9 @@
 		F69849B62C6E3A9800B50E31 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				F6CC068D2CA574B800DAC181 /* DI */,
 				F69849CF2C7150A300B50E31 /* Coordinators */,
+				F6CC06902CA5755900DAC181 /* AppDependenciesContainer.swift */,
 				F69849862C6E384A00B50E31 /* YuGiOhApp.swift */,
 			);
 			path = Application;
@@ -280,6 +289,14 @@
 			path = CardDetails;
 			sourceTree = "<group>";
 		};
+		F6CC068D2CA574B800DAC181 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				F6CC068E2CA574C600DAC181 /* Injected.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -297,11 +314,11 @@
 			);
 			name = YuGiOh;
 			packageProductDependencies = (
-				F69849B12C6E396400B50E31 /* TinyNetworking */,
 				F69849CA2C6E8EE200B50E31 /* Kingfisher */,
 				F69849CD2C714FA400B50E31 /* Stinsen */,
 				F69849DB2C72850900B50E31 /* Lottie */,
 				F6657EA72C7F5696006D81E3 /* SFSafeSymbols */,
+				F6F494902CA58426007DB49A /* TinyNetworking */,
 			);
 			productName = YuGiOh;
 			productReference = F69849832C6E384A00B50E31 /* YuGiOh.app */;
@@ -376,11 +393,11 @@
 			);
 			mainGroup = F698497A2C6E384A00B50E31;
 			packageReferences = (
-				F69849B02C6E396400B50E31 /* XCRemoteSwiftPackageReference "TinyNetworking" */,
 				F69849C92C6E8EE200B50E31 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				F69849CC2C714FA400B50E31 /* XCRemoteSwiftPackageReference "stinsen" */,
 				F69849DA2C72850900B50E31 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				F6657EA62C7F5696006D81E3 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+				F6F4948F2CA58426007DB49A /* XCRemoteSwiftPackageReference "TinyNetworking" */,
 			);
 			productRefGroup = F69849842C6E384A00B50E31 /* Products */;
 			projectDirPath = "";
@@ -428,8 +445,10 @@
 				F69849C82C6E502200B50E31 /* SingleCardCellView.swift in Sources */,
 				F69849D92C71544700B50E31 /* CardDetailsViewModel.swift in Sources */,
 				F69849C52C6E3EF700B50E31 /* Card.swift in Sources */,
+				F6CC068F2CA574C600DAC181 /* Injected.swift in Sources */,
 				F6626BFA2CA29FE5003A7FBB /* TabCoordinator.swift in Sources */,
 				F69849BD2C6E3E1D00B50E31 /* HomeView.swift in Sources */,
+				F6CC06912CA5755900DAC181 /* AppDependenciesContainer.swift in Sources */,
 				F69849E32C7285BE00B50E31 /* LottieAnimatingView.swift in Sources */,
 				F69849BA2C6E3AE000B50E31 /* APIRequest.swift in Sources */,
 				F6626BFF2CA2A4D3003A7FBB /* ProfileView.swift in Sources */,
@@ -449,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F69849982C6E384C00B50E31 /* YuGiOhTests.swift in Sources */,
+				F6CC06932CA57AFE00DAC181 /* URLProtocolMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,7 +549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -586,7 +606,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -681,13 +701,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LWLYM5BX6D;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = markos.YuGiOhTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YuGiOh.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YuGiOh";
 			};
 			name = Debug;
@@ -701,13 +725,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LWLYM5BX6D;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = markos.YuGiOhTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YuGiOh.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YuGiOh";
 			};
 			name = Release;
@@ -798,14 +826,6 @@
 				minimumVersion = 5.3.0;
 			};
 		};
-		F69849B02C6E396400B50E31 /* XCRemoteSwiftPackageReference "TinyNetworking" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jdisho/TinyNetworking.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 		F69849C92C6E8EE200B50E31 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -830,6 +850,14 @@
 				minimumVersion = 4.5.0;
 			};
 		};
+		F6F4948F2CA58426007DB49A /* XCRemoteSwiftPackageReference "TinyNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vualeks/TinyNetworking.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -837,11 +865,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F6657EA62C7F5696006D81E3 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
 			productName = SFSafeSymbols;
-		};
-		F69849B12C6E396400B50E31 /* TinyNetworking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F69849B02C6E396400B50E31 /* XCRemoteSwiftPackageReference "TinyNetworking" */;
-			productName = TinyNetworking;
 		};
 		F69849CA2C6E8EE200B50E31 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -857,6 +880,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F69849DA2C72850900B50E31 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		F6F494902CA58426007DB49A /* TinyNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6F4948F2CA58426007DB49A /* XCRemoteSwiftPackageReference "TinyNetworking" */;
+			productName = TinyNetworking;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

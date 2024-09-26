@@ -6,31 +6,45 @@
 //
 
 import XCTest
+import TinyNetworking
+
 @testable import YuGiOh
 
 final class YuGiOhTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testGetAllCards() async {
+        
+        let sessionConfiguration = URLSessionConfiguration.ephemeral
+        sessionConfiguration.protocolClasses = [URLProtocolMock.self]
+        let mockSession = URLSession(configuration: sessionConfiguration)
+        
+        let tinyNetworking = TinyNetworking<APIRequest>(stubbedSession: mockSession)
+        
+        AppDependenciesContainer.register(type: TinyNetworking<APIRequest>.self, tinyNetworking)
+        
+        let url = URL(string: "https://db.ygoprodeck.com/api/v7/cardinfo.php?")
+        
+        let jsonEnc = JSONEncoder()
+        let data = try! jsonEnc.encode(CardData(data: [
+            Card(id: 0, name: "testcard", desc: "testcardaaa", cardImages: [CardImage(id: 0, imageURL: "test", imageURLSmall: "test", imageURLCropped: "test")], type: "test")
+        ]))
+        let response = HTTPURLResponse(url: url!, statusCode: 200, httpVersion: nil, headerFields: nil)
+        URLProtocolMock.mockURLs[url] = (nil, data, response)
+        
+        let sut = HomeViewModel()
+        
+        let expectation1 = XCTestExpectation()
+        
+        await sut.getAllCards()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            
+            XCTAssertNotNil(sut.allCards.first(where: { $0.name == "testcard" } ))
+            
+            expectation1.fulfill()
+            
         }
+        
+        wait(for: [expectation1], timeout: 5.0)
     }
-
 }
