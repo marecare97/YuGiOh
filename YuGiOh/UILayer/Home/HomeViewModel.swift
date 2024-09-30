@@ -17,7 +17,10 @@ final class HomeViewModel: ObservableObject {
     @Injected var tinyNetworking: TinyNetworking<APIRequest>
     
     @Published var allCards: Cards = []
+    @Published var filteredCards: Cards = []
     @Published var isLoading = true
+    
+    @Published var monsterCardSelectedRace = ""
     
 }
 
@@ -51,6 +54,14 @@ extension HomeViewModel {
 extension HomeViewModel {
     
     func goToCardDetails(_ card: Card) {
+        
         self.homeRouter?.route(to: \.cardDetails, card)
+        
+    }
+    
+    func goToCardFilters(viewModel: HomeViewModel) {
+        
+        self.homeRouter?.route(to: \.cardFilters, viewModel)
+        
     }
 }

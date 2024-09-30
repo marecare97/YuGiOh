@@ -17,11 +17,17 @@ final class HomeCoordinator: NavigationCoordinatable {
     
     @Route(.modal) var cardDetails = makeCardDetails
     
+    @Route(.modal) var cardFilters = makeCardFilters
+    
     @ViewBuilder func makeStart() -> some View {
         HomeView(viewModel: HomeViewModel())
     }
     
     @ViewBuilder func makeCardDetails(card: Card) -> some View {
         CardDetailsView(card: card)
+    }
+    
+    @ViewBuilder func makeCardFilters(viewModel: HomeViewModel) -> some View {
+        CardFiltersView(viewModel: viewModel)
     }
 }

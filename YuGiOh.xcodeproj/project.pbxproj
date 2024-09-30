@@ -37,6 +37,7 @@
 		F6CC06912CA5755900DAC181 /* AppDependenciesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CC06902CA5755900DAC181 /* AppDependenciesContainer.swift */; };
 		F6CC06932CA57AFE00DAC181 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CC06922CA57AFE00DAC181 /* URLProtocolMock.swift */; };
 		F6F494912CA58426007DB49A /* TinyNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = F6F494902CA58426007DB49A /* TinyNetworking */; };
+		F6F494942CA6992B007DB49A /* CardFiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F494932CA6992B007DB49A /* CardFiltersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		F6CC068E2CA574C600DAC181 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		F6CC06902CA5755900DAC181 /* AppDependenciesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependenciesContainer.swift; sourceTree = "<group>"; };
 		F6CC06922CA57AFE00DAC181 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		F6F494932CA6992B007DB49A /* CardFiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFiltersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 		F69849BB2C6E3E1100B50E31 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F6F494922CA69863007DB49A /* Filters */,
 				F69849C62C6E501100B50E31 /* Subviews */,
 				F69849BC2C6E3E1D00B50E31 /* HomeView.swift */,
 				F69849BE2C6E3E2800B50E31 /* HomeViewModel.swift */,
@@ -295,6 +298,14 @@
 				F6CC068E2CA574C600DAC181 /* Injected.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		F6F494922CA69863007DB49A /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				F6F494932CA6992B007DB49A /* CardFiltersView.swift */,
+			);
+			path = Filters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,6 +463,7 @@
 				F69849E32C7285BE00B50E31 /* LottieAnimatingView.swift in Sources */,
 				F69849BA2C6E3AE000B50E31 /* APIRequest.swift in Sources */,
 				F6626BFF2CA2A4D3003A7FBB /* ProfileView.swift in Sources */,
+				F6F494942CA6992B007DB49A /* CardFiltersView.swift in Sources */,
 				F69849BF2C6E3E2800B50E31 /* HomeViewModel.swift in Sources */,
 				F6626BFC2CA2A456003A7FBB /* ProfileCoordinator.swift in Sources */,
 				F69849D42C71537E00B50E31 /* HomeCoordinator.swift in Sources */,

@@ -21,6 +21,7 @@ struct Card: Codable, Equatable {
     let desc: String
     let cardImages: [CardImage]
     let type: String
+    static let monsterCardRaces = ["Aqua", "Beast", "Beast-Warrior", "Creator-God", "Cyberse", "Dinosaur", "Divine-Beast", "Dragon", "Fairy", "Fiend", "Fish", "Insect", "Machine", "Plant", "Psychic", "Pyro", "Reptile", "Rock", "Sea Serpent", "Spellcaster", "Thunder", "Warrior", "Winged Beast", "Wyrm", "Zombie"]
     
     enum CodingKeys: String, CodingKey {
         case id, name, desc, type
@@ -39,3 +40,4 @@ struct CardImage: Codable, Equatable {
         case imageURLCropped = "image_url_cropped"
     }
 }
+
